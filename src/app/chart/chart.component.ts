@@ -42,7 +42,7 @@ export class ChartComponent implements OnInit {
         return Math.floor(Math.random() * max) + min;
     }
 
-    private init() {
+    private init(): void {
         const flag = this.chartContainer.nativeElement.offsetHeight;
         this.element = this.chartContainer.nativeElement;
         // console.log(this.chartContainer.nativeElement);
@@ -62,7 +62,7 @@ export class ChartComponent implements OnInit {
 
     }
 
-    private adddata() {
+    private adddata(): void {
         console.log(this._data);
         this._data.push({
             time: new Date().getTime(),
